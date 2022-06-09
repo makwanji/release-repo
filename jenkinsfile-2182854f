@@ -11,5 +11,28 @@ pipeline {
                 sh 'echo "Email Triggered - 2182854f Stage2 Completed"'
             }
         }        
+        stage('2182854f-Stage 3'){
+            steps {
+                sh 'echo "Stage 3 - 2182854f Stage2 Completed"'
+            }
+        }        
+        stage('2182854f-Stage 4'){
+            steps {
+                sh 'echo "test1 - 2182854f Stage2 Completed"'
+            }
+            steps {
+                sh 'echo "test2 - 2182854f Stage2 Completed"'
+            }            
+        }        
+        stage('2182854f-Stage 5'){
+            steps {
+                sh 'echo "Stage 5 - 2182854f Stage2 Completed"'
+            }
+        }        
+        stage('2182854f-Stage 6'){
+            steps {
+                sh 'echo "Stage 6 - 2182854f Stage2 Completed"'
+            }
+        }                
     }
 }
