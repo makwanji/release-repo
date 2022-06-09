@@ -5,7 +5,7 @@ pipeline {
             steps {
                 sh 'echo "Start of pipeline - 2182854f Stage1 Completed"'
             }
-        },
+        }
         stage('2182854f-Stage 2'){
             steps {
                 sh 'echo "Email Triggered - 2182854f Stage2 Completed"'
