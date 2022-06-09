@@ -1,11 +1,6 @@
 pipeline { 
     agent any 
     stages {
-        stage('Build') { 
-            steps { 
-                sh 'make' 
-            }
-        }
         stage('2182854f-Stage1'){
             steps {
                 sh 'echo "Stage 1 Completed"'
