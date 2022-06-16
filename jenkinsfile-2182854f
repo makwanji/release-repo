@@ -1,5 +1,5 @@
-pipeline { 
-    agent any 
+pipeline {
+    agent any
     stages {
         stage('2182854f-Stage 1'){
             steps {
@@ -10,12 +10,12 @@ pipeline {
             steps {
                 sh 'echo "Email Triggered - 2182854f Stage2 Completed"'
             }
-        }        
+        }
         stage('2182854f-Stage 3'){
             steps {
                 sh 'echo "Stage 3 - 2182854f Stage2 Completed"'
             }
-        }        
+        }
         stage('2182854f-Stage 4'){
             parallel {
                 stage('2182854f-Stage 4a'){
@@ -23,22 +23,22 @@ pipeline {
                         sh 'echo "test1 - 2182854f Stage2 Completed"'
                     }
                 }
-                stage('2182854f-Stage 4a'){
+                stage('2182854f-Stage 4b'){
                     steps {
                         sh 'echo "test1 - 2182854f Stage2 Completed"'
                     }
                 }
             }
-        }        
+        }
         stage('2182854f-Stage 5'){
             steps {
                 sh 'echo "Stage 5 - 2182854f Stage2 Completed"'
             }
-        }        
+        }
         stage('2182854f-Stage 6'){
             steps {
                 sh 'echo "Stage 6 - 2182854f Stage2 Completed"'
             }
-        }                
+        }
     }
 }
