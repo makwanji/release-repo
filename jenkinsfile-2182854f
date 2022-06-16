@@ -32,6 +32,7 @@ pipeline {
         }
         stage('2182854f-Stage 5'){
             steps {
+                input('Proceed to release the work to Prod Env?')
                 sh 'echo "Stage 5 - 2182854f Stage2 Completed"'
             }
         }
