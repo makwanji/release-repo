@@ -13,19 +13,19 @@ pipeline {
         }
         stage('2182854f-Stage 3'){
             steps {
-                sh 'echo "Stage 3 - 2182854f Stage2 Completed"'
+                sh 'docker rm -f 2182854F-container; docker run -d --name=2182854F-container 2182854f-image; echo "Stage 3 - 2182854f Stage3 Completed"'
             }
         }
         stage('2182854f-Stage 4'){
             parallel {
                 stage('2182854f-Stage 4a'){
                     steps {
-                        sh 'echo "test1 - 2182854f Stage2 Completed"'
+                        sh 'echo "test1 - 2182854f Stage4 Completed"'
                     }
                 }
                 stage('2182854f-Stage 4b'){
                     steps {
-                        sh 'echo "test1 - 2182854f Stage2 Completed"'
+                        sh 'echo "test1 - 2182854f Stage4 Completed"'
                     }
                 }
             }
@@ -33,12 +33,12 @@ pipeline {
         stage('2182854f-Stage 5'){
             steps {
                 input('Proceed to release the work to Prod Env?')
-                sh 'echo "Stage 5 - 2182854f Stage2 Completed"'
+                sh 'echo "Stage 5 - 2182854f Stage5 Completed"'
             }
         }
         stage('2182854f-Stage 6'){
             steps {
-                sh 'echo "Stage 6 - 2182854f Stage2 Completed"'
+                sh 'echo "Stage 6 - 2182854f Stage6 Completed"'
             }
         }
     }
