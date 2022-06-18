@@ -38,7 +38,7 @@ pipeline {
         }
         stage('2182854f-Stage 6'){
             steps {
-                sh 'echo "Stage 6 - 2182854f Stage6 Completed"'
+                sh 'echo "Stage 6 - 2182854f Stage6 Completed."'
             }
         }
     }
